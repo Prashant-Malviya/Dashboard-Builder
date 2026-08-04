@@ -337,6 +337,7 @@ This reduces unnecessary network requests and keeps the implementation simple.
 
 ---
 
+
 # Future Improvements
 
 * Authentication

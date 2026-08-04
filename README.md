@@ -337,18 +337,6 @@ This reduces unnecessary network requests and keeps the implementation simple.
 
 ---
 
-# Recent Improvements
-
-* Fixed Quill editor styles by importing its stylesheet correctly.
-* Added a dedicated drag handle so editing text no longer interferes with dragging.
-* Widget deletion now persists after saving and refreshing.
-* Added duplicate and delete actions directly to every widget.
-* Added configurable chart creation with support for Bar, Line, Pie and Doughnut charts.
-* Added toast notifications after successful saves.
-* Improved responsiveness for tablet and mobile devices using slide-out panels.
-
----
-
 # Future Improvements
 
 * Authentication

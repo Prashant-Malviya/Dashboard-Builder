@@ -4,6 +4,14 @@ A simple drag-and-drop dashboard builder inspired by tools like Canva and Figma.
 
 The project is built using the **PERN stack** with a React frontend and a Node.js + Express backend using Prisma ORM and PostgreSQL.
 
+## Live Demo
+
+- 🌐 **Live Application:** https://dashboard-builder-rho-five.vercel.app/
+- 🎨 **Frontend:** https://dashboard-builder-rho-five.vercel.app/
+- ⚙️ **Backend API:** https://dashboard-builder-d8i9.onrender.com
+
+> **Note:** The backend is hosted on **Render's free tier**. If the API has been idle for some time, the first request may take **30–60 seconds** to respond while the service wakes up. After that, subsequent requests should be much faster.
+
 ---
 
 # Tech Stack

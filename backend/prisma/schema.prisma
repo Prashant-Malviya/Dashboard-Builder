@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Dashboard {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  widgets   Widget[]
+
+  @@map("dashboards")
+}
+
+model Widget {
+  id          Int       @id @default(autoincrement())
+  dashboardId Int
+  type        String
+  x           Float     @default(0)
+  y           Float     @default(0)
+  width       Float     @default(300)
+  height      Float     @default(200)
+  content     Json
+  createdAt   DateTime  @default(now())
+  dashboard   Dashboard @relation(fields: [dashboardId], references: [id], onDelete: Cascade)
+
+  @@index([dashboardId])
+  @@map("widgets")
+}
